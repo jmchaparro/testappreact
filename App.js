@@ -1,20 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import { List } from "./components/List";
 import ProductView from "./components/ProductView";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <List />
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <List />
 
-          <ProductView />
-        </header>
-      </div>
-    );
-  }
+        <ProductView />
+      </header>
+    </div>
+  );
 }
 
 export default App;
